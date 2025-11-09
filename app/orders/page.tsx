@@ -41,12 +41,15 @@ export default function AdminStatsPage() {
       <Header />
       {/* <div className="p-6 max-w-4xl mx-auto"> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <h1 className="text-2xl font-bold mb-4">Admin — Stats</h1>
+        <h1 className="text-2xl font-bold mb-1">Admin — Stats</h1>
+        <p className="text-sm text-gray-500 mb-4">
+          Admin password: <span className="font-semibold">12345</span>
+        </p>
 
         <div className="mb-4 flex gap-2">
           <input
             type="password"
-            placeholder="Enter admin API key"
+            placeholder="Enter password"
             value={apiKey}
             onChange={(e) => setApiKey(e.target.value)}
             className="border px-3 py-2 rounded flex-1"
