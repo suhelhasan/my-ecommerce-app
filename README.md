@@ -43,23 +43,23 @@ It demonstrates full-stack features including cart management, checkout flow, dy
 
 ## 📁 Folder Structure
 
+```bash
 .
 ├── app/
-│ ├── api/ # Backend APIs (cart, checkout, admin, etc.)
-│ ├── cart/ # Cart page (user)
-│ ├── orders/ # Admin dashboard
-│ └── page.tsx # Home page (product listing)
-├── components/ # Reusable UI components
-│ ├── Header.tsx
-│ ├── ProductCard.tsx
-│ └── CartItem.tsx
+│   ├── api/              # Backend APIs (cart, checkout, admin, etc.)
+│   ├── cart/             # Cart page (user)
+│   ├── orders/           # Admin dashboard
+│   └── page.tsx          # Home page (product listing)
+├── components/           # Reusable UI components
+│   ├── Header.tsx
+│   ├── ProductCard.tsx
+│   └── CartItem.tsx
 ├── lib/
-│ └── store.ts # In-memory store for items, carts, orders, coupons
-├── public/images/ # Product images
-├── screenshots/ # App screenshots
+│   └── store.ts          # In-memory store for items, carts, orders, coupons
+├── public/images/        # Product images
+├── screenshots/          # App screenshots
 └── README.md
-
----
+```
 
 ## 🖼️ Screenshots
 
@@ -75,18 +75,18 @@ It demonstrates full-stack features including cart management, checkout flow, dy
 
 Follow these steps to run the project locally 👇
 
-### 1️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-####️⃣ Start the Development Server
+### Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-###3️⃣Open in Browser
+### Open in Browser
 
 Go to http://localhost:3000
