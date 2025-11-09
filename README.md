@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ E-Commerce Store — Next.js (React + TypeScript)
 
-## Getting Started
+A modern **E-Commerce Web App** built using **Next.js (App Router)**, **React**, **TypeScript**, and **Tailwind CSS**.  
+It demonstrates full-stack features including cart management, checkout flow, dynamic discount logic, and an admin dashboard — all within a clean, scalable architecture.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### 🧑‍💻 User
+
+- Add items to cart from the **Home Page**
+- View and update the cart at **/cart**
+- Checkout and place an order
+- Receive a **10% discount coupon** automatically on every _nth_ (2nd) order
+- Apply or remove discount codes easily
+
+### 🧑‍💼 Admin
+
+- Access the **Admin Dashboard** at **/orders**
+- View:
+  - Total Orders
+  - Total Items Purchased
+  - Total Purchase Amount
+  - Total Discount Amount
+  - All Generated Discount Codes (used / available)
+- Admin access key: **`12345`**
+
+---
+
+## 🧩 Tech Stack
+
+| Layer      | Technology                                    |
+| ---------- | --------------------------------------------- |
+| Framework  | [Next.js 14 (App Router)](https://nextjs.org) |
+| Language   | TypeScript                                    |
+| UI Library | React.js                                      |
+| Styling    | Tailwind CSS                                  |
+| API Routes | Next.js Route Handlers (`app/api/*`)          |
+| Data Store | In-memory (via `lib/store.ts`)                |
+
+---
+
+## 📁 Folder Structure
+
+.
+├── app/
+│ ├── api/ # Backend APIs (cart, checkout, admin, etc.)
+│ ├── cart/ # Cart page (user)
+│ ├── orders/ # Admin dashboard
+│ └── page.tsx # Home page (product listing)
+├── components/ # Reusable UI components
+│ ├── Header.tsx
+│ ├── ProductCard.tsx
+│ └── CartItem.tsx
+├── lib/
+│ └── store.ts # In-memory store for items, carts, orders, coupons
+├── public/images/ # Product images
+├── screenshots/ # App screenshots
+└── README.md
+
+---
+
+## 🖼️ Screenshots
+
+| Page                   | Preview                                                 |
+| ---------------------- | ------------------------------------------------------- |
+| 🏠 **Home Page**       | ![Home Screenshot](./public/images/screenshots/1s.png)  |
+| 🛒 **Cart Page**       | ![Cart Screenshot](./public/images/screenshots/2s.png)  |
+| 📊 **Admin Dashboard** | ![Admin Screenshot](./public/images/screenshots/3s.png) |
+
+---
+
+## ⚙️ Getting Started
+
+Follow these steps to run the project locally 👇
+
+### 1️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+####️⃣ Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###3️⃣Open in Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Go to http://localhost:3000

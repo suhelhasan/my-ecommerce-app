@@ -1,33 +1,3 @@
-// // components/CartItem.tsx
-// "use client";
-// import Image from "next/image";
-// import React, { useEffect, useState } from "react";
-
-// export default function CartItem({ it }: { it: any }) {
-//   const [items, setItems] = useState<any[]>([]);
-//   useEffect(() => {
-//     fetch("/api/items")
-//       .then((r) => r.json())
-//       .then((j) => setItems(j.items || []));
-//   }, []);
-//   console.log("it", items);
-//   console.log("it", it);
-//   return (
-//     <div className="flex justify-between p-2 border-b">
-//       {/* <Image
-//         src={items[] it.image}
-//         alt={it.name}
-//         fill
-//         style={{ objectFit: "contain" }}
-//         sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, 160px"
-//         priority={false}
-//       /> */}
-//       <div>{it.itemId}</div>
-//       <div>Qty: {it.qty}</div>
-//     </div>
-//   );
-// }
-// components/CartItem.tsx
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
